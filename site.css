@@ -1,0 +1,98 @@
+/* navbar-start */
+
+/* navbar-end */
+
+/* jumbotron-start */
+#comfort{
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 5em;
+	margin-left: 5em;
+}
+#btn-shop{
+    margin-left: 10em;
+    width: 10em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+#jumbotron{
+
+	margin-top: 3em;
+    height: 430px;
+}
+/* jumbotron-end */
+
+/*ads start*/
+#mw-section{
+	background-color: yellow;
+	height: 30em;
+}
+.ad-card{
+	background-color: rgba(0,0,0);
+	color: rgba(255,255,255);
+	height: 220px;
+	margin-top: 8em;
+}
+.card-title{
+	font-size: 2em;
+}
+.card-body a{
+	color: rgba(255,255,255);
+	font-size: 1.5em;
+}
+/*ads end*/
+/*carousel start*/
+.car-one{
+	background-color: red;
+	height: 400px
+}
+.car-two{
+	background-color: green;
+	height: 400px
+	
+}
+/*carousel end*/
+/*newsletter start*/
+.news button{
+	background-color: #ffffff00;
+    width: 10em;
+    height: 3em;
+   	margin-top: 2em;
+   	margin-bottom: 2em;
+}
+.news h1{
+	margin-top: 3em;
+	margin-bottom:1em;
+}
+/*newsletter end*/
+/*footer start*/
+.footer{
+	background-color: black;
+	height: 400px;
+	margin-top: 1em;
+}
+.account{
+	padding-left: 4em;
+	padding-top: 2em;
+	color: rgba(255,255,255);
+}
+.footer-right{
+	padding-left: 1em;
+}
+.follow-tag{
+	padding: 2em 0em 2em 3em; 
+
+	color: rgba(255,255,255);
+
+}
+.socials i{
+	padding-right: 1em;
+}
+.socials a:hover{
+	color: rgba(255,0,255,1);
+}
+.copyright{
+	margin-top: 10em;
+	color: rgba(255,255,255,0.4);
+}
+/*footer end
