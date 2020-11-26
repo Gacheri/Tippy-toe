@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tippy Toe</title>
     <link rel="stylesheet" type="text/css" href="site.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
@@ -38,13 +38,34 @@
 		</div>
 		<!--navbar end-->
 
+		<!-- nav-mobile -->
+		<div class="row mobile-nav">
+			<div class="dropdown">
+				<i class="fa fa-bars fa-2x " id="hamburger"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item" href="#">Women's</a>
+				  <a class="dropdown-item" href="#">Men's</a>
+				  <a class="dropdown-item" href="#">Kids</a>
+				  <a class="dropdown-item" href="#">Accessories</a>
+				  <a class="dropdown-item" href="#">Sale</a>
+
+				</div>
+			  </div>
+			
+			<img src="images/logo.png" alt="">
+			<i class="fa fa-search fa-2x" style="margin-right:0.5em;"></i>
+			<i class="fa fa-shopping-cart fa-2x"></i>
+		</div>
+		<!-- nav-mobile-end -->
+
 		<!-- jumbotron start -->
 		<div class="row" id="jumbotron">
 			<div class="col-md-4">
+				<img src="images/bg.png" alt="" id="bg-bg">
 				<p id="comfort">BUILT FOR<br>COMFORT.</p>
 				<button class="btn btn-outline-dark" id="btn-shop">SHOP</button>	
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 background">
 				<img src="images/bg.png">
 			</div>
 		
@@ -53,7 +74,7 @@
 
 		<!-- ads start -->
 		<div class="row" id="mw-section">
-			<div class="col-md-6 ad-ad">
+			<div class="col-md-6 ad-ad-m">
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body">
     					<h5 class="card-title mt-3">Men's</h5><br><br><br>
@@ -61,7 +82,7 @@
   					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 ad-ad">
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body ">
     					<h5 class="card-title mt-3">Women's</h5><br><br><br>
@@ -207,7 +228,7 @@
 		<div class="container-fluid text-center text-md-left">
              <div class="row">
                 <div class="col-md-12 col-sm-12">
-                  <div class="new-arrivals"><center><h2>MOST SOUGHT FOR KICKS</h2></center></div>
+                  <div class="new-kicks"><center><h2>MOST SOUGHT FOR KICKS</h2></center></div>
               <!--Carousel Wrapper-->
           		<div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -335,7 +356,7 @@
 		<!-- newsletter start -->
 		<div class="row">
 			<div class="col-md-12 news  justify-content-center">
-				<h1 class="text-center">Never miss <br>a Drop</h1></center>
+				<center><h1>Never miss <br>a Drop</h1></center>
 				<center><h5>Receive updates about new products and promotions</h5></center>
 				<center><button class="btn btn-outline-primary">JOIN MAIL LIST</button></center>
 			</div>
@@ -344,56 +365,82 @@
 		<!-- newsletter end -->
 
 		<!-- footer start -->
-		<div class="row footer">
-			<div class="col-md-4 footer-left">
-				<div class="account">
-					<h3>MY ACCOUNT</h3>
-					<p>sign-in</p>
-					<p>Register</p>
-					<p>Order status</p>
-				</div>
-				<div class="account">
-					<h3>LEGAL STUFF</h3>
-					<p>Terms of use</p>
-					<p>Terms of sale</p>
-					<p>Privacy policy</p>
-				</div>
-			</div>
-			<div class="col-md-4 footer-left1">
-				<div class="account">
-					<h3>SHIPPING</h3>
-					<p>Returns</p>
-					<p>Sizing</p>
-					<p>Pick up</p>	
-				</div>
-				<div class="account">
-					<h3>OUR STORY</h3>
-					<p>sign-in</p>
-					<p>Sustainability</p>
-				</div>
-			</div>
-			<div class="col-md-4 footer-right">
-				<div class="row follow-tag">
-					<h3>FOLLOW TIPPY TOE'S</h3>
-				</div>
-				<div class="socials">
-					<a href=""><i class="fa fa-facebook-f fa-3x"></i></a>
-					<a href=""><i class="fa fa-instagram fa-3x"></i></a>
-					<a href=""><i class="fa fa-twitter fa-3x"></i></a>
-					<a href=""><i class="fa fa-linkedin fa-3x"></i></a>
-				</div>	
-				<div class="copyright">
-					<p> &copy; 2020 Tippy-toes Shoes Inc. All Rights Reserved</p>
-					
-				</div>	
-			</div>
-			
-		</div>
+		<div class="footer font-small white pt-4 row">
+        	<!-- Footer Links -->
+       		<div class="container-fluid text-center text-md-left">
+          	<!-- Grid row -->
+          	<div class="row">
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3 account">
+              <!-- Links -->
+              <h5 class="text-uppercase ">MY ACCOUNT</h5>
+              	<ul class="list-unstyled">
+                	<li><a href="#">Sign-In</a> </li>
+                	<li><a href="#">Register</a></li>
+            		<li><a href="#">Order Status</a></li>
+              	</ul>
+            </div>
+            <!-- Grid column -->
 
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3 account">
+              <!-- Links -->
+              <h5 class="text-uppercase">SHIPPING</h5>
+              	<ul class="list-unstyled">
+                	<li><a href="#">Returns</a></li>
+                	<li><a href="#">Sizing</a></li>
+                	<li><a href="#">Pick-up</a></li>
+              	</ul>
+            </div>
+			<!-- Grid column -->
+			
+             <!-- Grid column -->
+				<div class="col-md-2 mb-md-0 mb-3 account">
+					<!-- Links -->
+                    <h5 class="text-uppercase">LEGAL STUFF</h5>
+                    	<ul class="list-unstyled">
+							<li><a href="#">Terms of use</a></li>
+                      		<li><a href="#">Terms of sale</a></li>
+                      		<li><a href="#">Privacy policies</a></li>
+						</ul>
+				</div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3 account">
+				<!-- Links -->
+				<h5 class="text-uppercase">OUR STORY</h5>
+				<ul class="list-unstyled">
+                	<li><a href="#">Mission</a></li>
+               		<li><a href="#">Outlets</a></li>
+                	<li><a href="#">FAQs</a></li>
+              	</ul>
+			</div>
+			<div class="col-md-4 mb-md-0 mb-3 account">
+				<!-- Links -->
+				<ul style="list-style: none;">
+					<li><h5 class="text-uppercase">FOLLOW TIPPY TOES</h5></li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin fa-2x socials" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram fa-2x socials" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter fa-2x socials" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook fa-2x socials" aria-hidden="true"></i></a>
+						
+					</li>
+					<li><h6 class="copyright">&copy; 2020 Copyright TippyToe's</h6><br><br><br></li>
+				</ul>	 	
+			</div>
+            <!-- Grid column -->
+		</div>
+		
+        <!-- Grid row -->
+        </div>
+      </footer>
 		<!-- footer end -->
+		
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
           
 		
 	</div>

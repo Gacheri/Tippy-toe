@@ -1,8 +1,23 @@
 /* navbar-start */
+.mobile-nav{
+	padding-top:1em;
+}
 
+.mobile-nav img{
+	height: 2em;
+	width: 4em;
+	margin-right: 3em;
+}
+#hamburger{
+	margin-left: 1em;
+	margin-right: 2em;
+}
 /* navbar-end */
 
 /* jumbotron-start */
+#bg-bg{
+	display: none;
+}
 #comfort{
 	font-size: 2em;
 	font-weight: bold;
@@ -51,6 +66,12 @@
 	margin-top: 2em;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.new-kicks{
+	font-weight: bolder;
+	font-size:2em;
+	margin-top: 2em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /*carousel end*/
 /*newsletter start*/
 .news button{
@@ -68,7 +89,6 @@
 /*footer start*/
 .footer{
 	background-color: black;
-	height: 400px;
 	margin-top: 1em;
 }
 .account{
@@ -76,23 +96,73 @@
 	padding-top: 2em;
 	color: rgba(255,255,255);
 }
+.account a{
+	color:rgba(255,255,255);
+	padding: 2em 1em 0em 0em;
+}
 .footer-right{
 	padding-left: 1em;
 }
 .follow-tag{
-	padding: 2em 0em 2em 3em; 
-
+	padding: 2em 0em 1em 0em;
 	color: rgba(255,255,255);
-
 }
-.socials i{
-	padding-right: 1em;
+.socials{
+	padding: 0.5em 1em 1em 0em;;
 }
-.socials a:hover{
+.socials:hover{
 	color: rgba(255,0,255,1);
 }
 .copyright{
-	margin-top: 10em;
-	color: rgba(255,255,255,0.4);
+	color: rgba(211,211,211);
 }
-/*footer end
+/*footer end */
+@media screen and (max-width: 600px) {
+	.top-nav{
+		display: none !important;
+	}
+	#comfort{
+		font-size: 2em;
+		margin-top: 1em;
+		margin-left: 2.7em;
+		margin-bottom: 0%;
+	}
+	#btn-shop{
+		margin-left: 5.5em;
+	}
+	.background{
+		display: none;
+	}
+	.ad-ad-m{
+		margin-top:0.5em;
+	}
+	.ad-ad{
+		background-color: yellow;
+		padding-bottom:2em;
+	}
+	.new-arrivals{
+		margin-top:10em;
+	}
+	.new-kicks{
+		font-weight: bolder;
+		font-size:2em;
+		margin-top: 3em;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	.footer{
+		display: none;
+	}
+	.socials{
+		padding: 0.1em 0em 2em 0em;
+	}
+	#bg-bg{
+		display: inline !important;
+		height: 10em;
+		width: auto;
+	}
+}
+@media screen and (min-width: 600px) {
+	.mobile-nav{
+		display: none !important;
+	}
+}
