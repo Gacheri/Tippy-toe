@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>tippy toe</title>
-	<link rel="stylesheet" type="text/css" href="site.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Bitter" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="carousel.js"></script>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippy Toe</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<div class="container-fluid">
 		<!-- navbar start -->
-		<div class="row nav-fix">
+		<div class="row nav-fix top-nav">
 			<nav class=" col navbar navbar-light bg-light">
 				<div class="col-md-5">
 					<a class="navbar-brand" href="#">Women's</a>
@@ -26,8 +30,29 @@
 					<a class="navbar-brand nav-logo" href="#" id="logo"><img src="images/logo.png" alt="tippy toe logo"></a>
 				</div>	
 				<div class="col-md-3">
-					<a class="navbar-brand" href="#"><i class="fas fa-search fa-2x"></i></a>
-					<a class="navbar-brand" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+					<a class="navbar-brand" href="#"><i class="fa fa-search fa-2x"></i></a>
+					<a class="navbar-brand" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+				</div>
+				
+			</nav>
+		</div>
+
+		<div class="row nav-fix">
+			<nav class=" col navbar navbar-light bg-light">
+				<div class="dropdown">
+  					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</button>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Women's</a>
+    					<a class="dropdown-item" href="#">Men's</a>
+    					<a class="dropdown-item" href="#">Kids</a>
+    					<a class="dropdown-item" href="#">Accessories</a>
+    					<a class="dropdown-item" href="#">Sale</a>
+  					</div>	
+				</div>
+					<a class="navbar-brand nav-logo" href="#" id="logo"><img src="images/logo.png" alt="tippy toe logo"></a>	
+				<div class="col-md-3">
+					<a class="navbar-brand" href="#"><i class="fa fa-search fa-2x"></i></a>
+					<a class="navbar-brand" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
 				</div>
 				
 			</nav>
@@ -49,11 +74,11 @@
 
 		<!-- ads start -->
 		<div class="row" id="mw-section">
-			<div class="col-md-6">
+			<div class="col-md-6 ad-ad">
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body">
     					<h5 class="card-title mt-3">Men's</h5><br><br><br>
-    					<a href="#" class="card-link">Shop now</a><i class="fas fa-arrow-right ml-lg-3"></i>
+    					<a href="#" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
   					</div>
 				</div>
 			</div>
@@ -61,7 +86,7 @@
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body ">
     					<h5 class="card-title mt-3">Women's</h5><br><br><br>
-    					<a href="#" class="card-link">Shop now</a><i class="fas fa-arrow-right ml-lg-3"></i>
+    					<a href="#" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
   					</div>
 				</div>
 			</div>
@@ -69,27 +94,267 @@
 		<!-- ads end -->
 
 		<!-- carousel-one start -->
-		<div class="row car-one">
-			<!-- <img src="images/converse.jpg">
-			<img src="images/converse.jpg">
-			<img src="images/converse.jpg"> -->
-			
-		</div>
-			
+		<div class="container-fluid text-center text-md-left">
+             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <h3>New Arrivals</h3>
+              		<!--Carousel Wrapper-->
+          		<div id="multi-item-example1" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            	<!--Controls-->
+            		<div class="controls-top text-center">
+              			<a class="btn-floating" href="#multi-item-example1" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+              			<a class="btn-floating" href="#multi-item-example1" data-slide="next"><i
+                  		class="fa fa-arrow-right"></i></a>
+            		</div>
+            	<!--/.Controls-->
+
+            	<!--Indicators-->
+            		<ol class="carousel-indicators">
+              			<li data-target="#multi-item-example1" data-slide-to="0" class="active"></li>
+              			<li data-target="#multi-item-example1" data-slide-to="1"></li>
+            		</ol>
+            	<!--/.Indicators-->
+
+            	<!--Slides-->
+            		<div class="carousel-inner" role="listbox">
+
+              		<!--First slide-->
+              			<div class="carousel-item active">
+                			<div class="col-md-3" style="float:left">
+                				<div class="card mb-2">
+                    				<img class="card-img-top"src="images/adidas.jpg" alt="Card image cap">
+                   						<div class="card-body">
+                      						<h4 class="card-title">ADIDAS</h4>
+                      						<p class="card-text">Kshs. 4500.00</p>
+                      						<a class="btn btn-primary">ORDER</a>
+                    					</div>
+                  				</div>
+                			</div>
+                		<div class="col-md-3" style="float:left">
+                  			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/converse.jpg" alt="Card image cap">
+                    				<div class="card-body">
+                      					<h4 class="card-title">CONVERSE</h4>
+                      					<p class="card-text">Kshs. 1,500</p>
+                      					<a class="btn btn-primary">ORDER</a>
+                    				</div>
+                  			</div>
+                		</div>
+
+                		<div class="col-md-3" style="float:left">
+                  			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/revolt.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">REVOLT</h4>
+                      				<p class="card-text">Kshs. 2,000</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  			</div>
+                		</div>
+                		<div class="col-md-3" style="float:left">
+                			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/airforce.jpg" alt="Card image cap">
+                    				<div class="card-body">
+                      					<h4 class="card-title">AIRFORCE</h4>
+                      					<p class="card-text">Kshs. 3,500</p>
+                      					<a class="btn btn-primary">ORDER</a>
+                    				</div>
+                  			</div>
+                		</div>
+                	</div>
+              <!--/.First slide-->
+
+              <!--Second slide-->
+              	<div class="carousel-item">
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/airforce1.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">AIRFORCE</h4>
+                      				<p class="card-text">Kshs. 3,500</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  		</div>
+               		 </div>
+
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/adidas1.jpg" alt="Card image cap">
+                    		<div class="card-body">
+                      			<h4 class="card-title">ADIDAS</h4>
+                      			<p class="card-text">Kshs. 5,000</p>
+                      			<a class="btn btn-primary">ORDER</a>
+                    		</div>
+                  		</div>
+                	</div>
+
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/converse2.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">CONVERSE</h4>
+                      				<p class="card-text">Kshs. 6,000</p>
+                     				<a class="btn btn-primary">ORDER</a>
+                   				 </div>
+                  		</div>
+                	</div>
+                
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/vans.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">VANS</h4>
+                      				<p class="card-text">Kshs. 7,800</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  		</div>
+                	</div>
+                </div>
+              <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+
+        </div>
+   		</div>
+        </div>
+        </div>	
 		<!-- carousel-one end -->
 
 		<!-- carousel-two start -->
 			
-		<div class="row car-two">
-			
-		</div>
+		<div class="container-fluid text-center text-md-left">
+             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <h3>New Arrivals</h3>
+              <!--Carousel Wrapper-->
+          		<div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            	<!--Controls-->
+            		<div class="controls-top text-center" id="controls2">
+              			<a class="btn-floating" href="#multi-item-example2" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+              			<a class="btn-floating" href="#multi-item-example2" data-slide="next"><i
+                  		class="fa fa-arrow-right"></i></a>
+            		</div>
+            	<!--/.Controls-->
+
+            	<!--Indicators-->
+            		<ol class="carousel-indicators">
+              			<li data-target="#multi-item-example1" data-slide-to="0" class="active"></li>
+              			<li data-target="#multi-item-example1" data-slide-to="1"></li>
+            		</ol>
+            	<!--/.Indicators-->
+
+            	<!--Slides-->
+            		<div class="carousel-inner" role="listbox">
+
+              		<!--First slide-->
+              			<div class="carousel-item active">
+                			<div class="col-md-3" style="float:left">
+                				<div class="card mb-2">
+                    				<img class="card-img-top"src="images/adidas.jpg" alt="Card image cap">
+                   						<div class="card-body">
+                      						<h4 class="card-title">ADIDAS</h4>
+                      						<p class="card-text">Kshs. 4500.00</p>
+                      						<a class="btn btn-primary">ORDER</a>
+                    					</div>
+                  				</div>
+                			</div>
+                		<div class="col-md-3" style="float:left">
+                  			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/converse.jpg" alt="Card image cap">
+                    				<div class="card-body">
+                      					<h4 class="card-title">CONVERSE</h4>
+                      					<p class="card-text">Kshs. 1,500</p>
+                      					<a class="btn btn-primary">ORDER</a>
+                    				</div>
+                  			</div>
+                		</div>
+
+                		<div class="col-md-3" style="float:left">
+                  			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/revolt.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">REVOLT</h4>
+                      				<p class="card-text">Kshs. 2,000</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  			</div>
+                		</div>
+                		<div class="col-md-3" style="float:left">
+                			<div class="card mb-2">
+                    			<img class="card-img-top"src="images/airforce.jpg" alt="Card image cap">
+                    				<div class="card-body">
+                      					<h4 class="card-title">AIRFORCE</h4>
+                      					<p class="card-text">Kshs. 3,500</p>
+                      					<a class="btn btn-primary">ORDER</a>
+                    				</div>
+                  			</div>
+                		</div>
+                	</div>
+              <!--/.First slide-->
+
+              <!--Second slide-->
+              	<div class="carousel-item">
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/airforce1.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">AIRFORCE</h4>
+                      				<p class="card-text">Kshs. 3,500</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  		</div>
+               		 </div>
+
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/adidas1.jpg" alt="Card image cap">
+                    		<div class="card-body">
+                      			<h4 class="card-title">ADIDAS</h4>
+                      			<p class="card-text">Kshs. 5,000</p>
+                      			<a class="btn btn-primary">ORDER</a>
+                    		</div>
+                  		</div>
+                	</div>
+
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/converse2.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">CONVERSE</h4>
+                      				<p class="card-text">Kshs. 6,000</p>
+                     				<a class="btn btn-primary">ORDER</a>
+                   				 </div>
+                  		</div>
+                	</div>
+                
+                	<div class="col-md-3" style="float:left">
+                  		<div class="card mb-2">
+                    		<img class="card-img-top"src="images/vans.jpg" alt="Card image cap">
+                    			<div class="card-body">
+                      				<h4 class="card-title">VANS</h4>
+                      				<p class="card-text">Kshs. 7,800</p>
+                      				<a class="btn btn-primary">ORDER</a>
+                    			</div>
+                  		</div>
+                	</div>
+                </div>
+              <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+
+        </div>
+   		</div>
+        </div>
+        </div><hr>
 			
 		<!-- carousel-two end -->
 
 		<!-- newsletter start -->
 		<div class="row">
 			<div class="col-md-12 news  justify-content-center">
-				<center><h1>Never miss <br>a Drop</h1></center>
+				<h1 class="text-center">Never miss <br>a Drop</h1></center>
 				<center><h5>Receive updates about new products and promotions</h5></center>
 				<center><button class="btn btn-outline-primary">JOIN MAIL LIST</button></center>
 			</div>
@@ -131,10 +396,10 @@
 					<h3>FOLLOW TIPPY TOE'S</h3>
 				</div>
 				<div class="socials">
-					<a href=""><i class="fab fa-facebook-f fa-3x"></i></a>
-					<a href=""><i class="fab fa-instagram fa-3x"></i></a>
-					<a href=""><i class="fab fa-twitter fa-3x"></i></a>
-					<a href=""><i class="fab fa-linkedin-in fa-3x"></i></a>
+					<a href=""><i class="fa fa-facebook-f fa-3x"></i></a>
+					<a href=""><i class="fa fa-instagram fa-3x"></i></a>
+					<a href=""><i class="fa fa-twitter fa-3x"></i></a>
+					<a href=""><i class="fa fa-linkedin fa-3x"></i></a>
 				</div>	
 				<div class="copyright">
 					<p> &copy; 2020 Tippy-toes Shoes Inc. All Rights Reserved</p>
@@ -145,6 +410,10 @@
 		</div>
 
 		<!-- footer end -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          
 		
 	</div>
 </body>
