@@ -20,34 +20,48 @@
 		<div class="row nav-fix top-nav">
 			<nav class=" col navbar navbar-light bg-light">
 				<div class="col-md-5">
-					<a class="navbar-brand" href="#">Women's</a>
-					<a class="navbar-brand" href="#">Men's</a>
-					<a class="navbar-brand" href="#">Kids</a>
-					<a class="navbar-brand" href="#">Accessories</a>
-					<a class="navbar-brand" href="#">Sale</a>	
+					<a class="navbar-brand" href="women.html">Women's</a>
+					<a class="navbar-brand" href="women.html">Men's</a>
+					<a class="navbar-brand" href="women.html">Kids</a>
+					<a class="navbar-brand" href="women.html">Accessories</a>
+					<a class="navbar-brand" href="women.html">Sale</a>	
 				</div>
 				<div class="col-md-4">
 					<a class="navbar-brand nav-logo" href="#" id="logo"><img src="images/logo.png" alt="tippy toe logo"></a>
 				</div>	
 				<div class="col-md-3">
-					<a class="navbar-brand" href="#"><i class="fa fa-search fa-2x"></i></a>
 					<a class="navbar-brand" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-				</div>
-				
+				<i class="fa fa-user-circle fa-2x "type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item" href="signup.html">Sign-Up</a>
+				  <a class="dropdown-item" href="signup.html">Login</a>
+			  	</div>	
 			</nav>
 		</div>
 		<!--navbar end-->
-
+		<!-- search bar -->
+		<div class="row">
+			<div class="search-bar">
+   			<input type="text" name="" class="search-txt" placeholder="SEARCH..."/>
+   			<a class="search-btn">
+    		<i class="fa fa-search" style="color: rgb(255,255,255);"></i>
+   			</a>
+  		</div>
+		</div>
+		
 		<!-- nav-mobile -->
 		<div class="row mobile-nav">
 			<div class="dropdown">
-				<i class="fa fa-bars fa-2x " id="hamburger"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+				<i class="fa fa-bars fa-2x " id="hamburger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				  <a class="dropdown-item" href="#">Women's</a>
 				  <a class="dropdown-item" href="#">Men's</a>
 				  <a class="dropdown-item" href="#">Kids</a>
 				  <a class="dropdown-item" href="#">Accessories</a>
-				  <a class="dropdown-item" href="#">Sale</a>
+				  <a class="dropdown-item" href="#">Sale</a><hr>
+				  <a class="dropdown-item" href="#">Sign-up</a>
+				  <a class="dropdown-item" href="#">Log-in</a>
+
 
 				</div>
 			  </div>
@@ -62,8 +76,8 @@
 		<div class="row" id="jumbotron">
 			<div class="col-md-4">
 				<img src="images/bg.png" alt="" id="bg-bg">
-				<p id="comfort">BUILT FOR<br>COMFORT.</p>
-				<button class="btn btn-outline-dark" id="btn-shop">SHOP</button>	
+				<p id="comfort">BUILT FOR<br>COMFORT.</p>	
+				<a href="women.html" class="btn btn-outline-dark" id="btn-shop">SHOP</a>
 			</div>
 			<div class="col-md-8 background">
 				<img src="images/bg.png">
@@ -78,7 +92,7 @@
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body">
     					<h5 class="card-title mt-3">Men's</h5><br><br><br>
-    					<a href="#" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
+    					<a href="women.html" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
   					</div>
 				</div>
 			</div>
@@ -86,7 +100,7 @@
 				<div class="card col-md-10 mx-auto ad-card" style="width: 18rem; background-color: black;">
   					<div class="card-body ">
     					<h5 class="card-title mt-3">Women's</h5><br><br><br>
-    					<a href="#" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
+    					<a href="women.html" class="card-link">Shop now</a><i class="fa fa-arrow-right ml-lg-3"></i>
   					</div>
 				</div>
 			</div>
@@ -357,7 +371,11 @@
 		<div class="row">
 			<div class="col-md-12 news  justify-content-center">
 				<center><h1>Never miss <br>a Drop</h1></center>
-				<center><h5>Receive updates about new products and promotions</h5></center>
+				<center><h5>Receive updates about new products and promotions</h5></center><br>
+				<form>
+					<center><input class="btn btn-floating" type="" name="Name" placeholder="Input your Name">
+						<input class="btn btn-floating" type="" name="Email" placeholder="Input your email"></center>
+				</form>
 				<center><button class="btn btn-outline-primary">JOIN MAIL LIST</button></center>
 			</div>
 			

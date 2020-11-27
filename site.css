@@ -1,4 +1,7 @@
 /* navbar-start */
+.top-nav{
+	margin-bottom: 3em;
+}
 .mobile-nav{
 	padding-top:1em;
 }
@@ -40,13 +43,13 @@
 /*ads start*/
 #mw-section{
 	background-color: yellow;
-	height: 30em;
+	height: 20em;
 }
 .ad-card{
 	background-color: rgba(0,0,0);
 	color: rgba(255,255,255);
 	height: 220px;
-	margin-top: 8em;
+	margin-top: 10em;
 }
 .card-title{
 	font-size: 2em;
@@ -58,7 +61,7 @@
 /*ads end*/
 /*carousel start*/
 .card-img-top{
-	height: 20em;
+	height: 200px;
 }
 .new-arrivals{
 	font-weight: bolder;
@@ -117,6 +120,42 @@
 	color: rgba(211,211,211);
 }
 /*footer end */
+/*signup*/
+.purple{
+	background-color: rgb(255,218,185);
+	height: 650px;
+}
+
+/*sale*/
+.sale{
+	background: linear-gradient(180deg, #000000 0%, rgba(119, 31, 63, 0) 98.96%);
+	border-radius: 50px;
+	margin-top: 3em;
+	height: 300px;
+}
+.sale h2,h4{
+	margin-top: 2em;
+	color: rgba(0,0,0);
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+.filter-row{
+	margin-top: 3em;
+	background-color: rgba(211,211,211,0.4);
+}
+#sort{
+	margin-top: 1em;
+}
+.card{
+	margin:2em;
+}
+.fa-heart{
+	margin-left: 4em;
+}
+.shoe-samples{
+	display: inline-flex;
+}
+
 @media screen and (max-width: 600px) {
 	.top-nav{
 		display: none !important;
@@ -165,4 +204,59 @@
 	.mobile-nav{
 		display: none !important;
 	}
+}
+
+
+.search-bar {
+ position: absolute;
+ margin-left: 45em ;
+ padding-bottom: 5em;
+ transform: translate(-50%, -50%);
+ background: #2f3640;
+ height: 60px;
+ border-radius: 40px;
+ padding: 10px;
+}
+
+.search-bar:hover > .search-txt {
+ width: 240px;
+ padding: 0 6px;
+}
+
+.search-bar:hover > .search-btn {
+ background-color: tomato;
+ color: black;
+}
+
+.search-btn {
+ color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.search-btn > i {
+ font-size: 30px;
+}
+
+.search-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ width: 0px;
+ font-weight: bold;
 }
