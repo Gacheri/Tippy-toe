@@ -30,8 +30,23 @@
 					<a class="navbar-brand nav-logo" href="#" id="logo"><img src="images/logo.png" alt="tippy toe logo"></a>
 				</div>	
 				<div class="col-md-3">
-					<a class="navbar-brand" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+					<i class="fa fa-search fa-2x pr-3" data-toggle="modal" data-target=".bd-example-modal-lg" id="search-modal"></i>
+					<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							WHAT ARE YOU LOOKIG FOR??
+							<div search bar>
+								<form class="form-inline ">
+									<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+									<button class="btn btn-outline-success my-2 my-sm-0 float-right" type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+						</div>
+					</div>
+					<a class="navbar-brand" href="cart.html"><i class="fa fa-shopping-cart fa-2x pr-3"></i></a>
 				<i class="fa fa-user-circle fa-2x "type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+				
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				  <a class="dropdown-item" href="signup.html">Sign-Up</a>
 				  <a class="dropdown-item" href="signup.html">Login</a>
@@ -40,14 +55,7 @@
 		</div>
 		<!--navbar end-->
 		<!-- search bar -->
-		<div class="row">
-			<div class="search-bar">
-   			<input type="text" name="" class="search-txt" placeholder="SEARCH..."/>
-   			<a class="search-btn">
-    		<i class="fa fa-search" style="color: rgb(255,255,255);"></i>
-   			</a>
-  		</div>
-		</div>
+		
 		
 		<!-- nav-mobile -->
 		<div class="row mobile-nav">

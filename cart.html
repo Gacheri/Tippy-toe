@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+    <body>
+       <div class="container-fluid">
+            <div class="row nav-fix top-nav">
+                <nav class=" col navbar navbar-light bg-light">
+                    <div class="col-md-5">
+                        <a class="navbar-brand" href="#">Women's</a>
+                        <a class="navbar-brand" href="#">Men's</a>
+                        <a class="navbar-brand" href="#">Kids</a>
+                        <a class="navbar-brand" href="#">Accessories</a>
+                        <a class="navbar-brand" href="#">Sale</a>	
+                    </div>
+                    <div class="col-md-4">
+                        <a class="navbar-brand nav-logo" href="index.html" id="logo"><img src="images/logo.png" alt="tippy toe logo"></a>
+                    </div>	
+                    <div class="col-md-3">
+                        <i class="fa fa-search fa-2x pr-3" data-toggle="modal" data-target=".bd-example-modal-lg" id="search-modal"></i>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                WHAT ARE YOU LOOKIG FOR??
+                                <div search bar>
+                                    <form class="form-inline ">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0 float-right" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            </div>
+                        </div>	
+                    <a class="navbar-brand" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+    
+                    <i class="fa fa-user-circle fa-2x "type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="signup.html">Sign-Up</a>
+                      <a class="dropdown-item" href="#">Login</a>
+                      </div>
+    
+                    </div>
+                    
+                </nav>
+            </div>
+            <!--navbar end-->
+            <!-- nav-mobile -->
+            <div class="row mobile-nav">
+                <div class="dropdown">
+                    <i class="fa fa-bars fa-2x " id="hamburger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Women's</a>
+                      <a class="dropdown-item" href="#">Men's</a>
+                      <a class="dropdown-item" href="#">Kids</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                      <a class="dropdown-item" href="#">Sale</a><hr>
+                      <a class="dropdown-item" href="#">Sign-up</a>
+                      <a class="dropdown-item" href="#">Log-in</a>
+                    </div>
+                  
+                <img src="images/logo.png" alt="">
+                <i class="fa fa-search fa-2x" style="margin-right:0.5em;"></i>
+                <i class="fa fa-shopping-cart fa-2x"></i>
+            </div>
+           </div>
+           <div class="row" style="background-color: grey; height: 2em;">
+            <h2>SHOPPING CART</h2>
+           </div>
+           <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-3"><p> (4) items</p></div>
+                        <div class="col-md-2"><p>price</p></div>
+                        <div class="col-md-2"><p>size</p></div>
+                        <div class="col-md-3"><hp>Quantity</p></div>
+                        <div class="col-md-2"><p>Total</p></div>
+                    </div><hr class="cart-hr">
+                    <div class="row">
+                        <div class="col-md-3 cart-image">
+                            <img src="images/airforce1.jpg" alt="" id="cart-img">
+                            <p id="cart-def">AIRMAX PRO</p>
+                        </div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                        <div class="col-md-2"><p>41</p></div>
+                        <div class="col-md-3"><p>1</p></div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                    </div><hr>
+                    <div class="row">
+                        <div class="col-md-3 cart-image">
+                            <img src="images/airforce1.jpg" alt="" id="cart-img">
+                            <p id="cart-def">AIRMAX PRO</p>
+                        </div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                        <div class="col-md-2"><p>41</p></div>
+                        <div class="col-md-3"><p>1</p></div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                    </div><hr>
+                    <div class="row">
+                        <div class="col-md-3 cart-image">
+                            <img src="images/airforce1.jpg" alt="" id="cart-img">
+                            <p id="cart-def">AIRMAX PRO</p>
+                        </div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                        <div class="col-md-2"><p>41</p></div>
+                        <div class="col-md-3"><p>1</p></div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                    </div><hr>
+                    <div class="row">
+                        <div class="col-md-3 cart-image">
+                            <img src="images/airforce1.jpg" alt="" id="cart-img">
+                            <p id="cart-def">AIRMAX PRO</p>
+                        </div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                        <div class="col-md-2"><p>41</p></div>
+                        <div class="col-md-3"><p>1</p></div>
+                        <div class="col-md-2"><p>ksh.2500</p></div>
+                    </div><hr>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="order-summary">
+                        <h4>ORDER SUMMARY</h4>
+                    </div><hr id="cart-hr">
+                    <div>
+                        <p>Add a Promo code</p>
+                        <form action="" class="form-group">
+                            <input type="text">
+                            <button type="submit" class="btn-outline-danger">APPLY</button>
+                        </form>
+                    </div><hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>ITEMS</p>
+                            <p>TOTAL</p>
+                            <p>DISCOUNT</p>
+                            <p>SHIPPING FEE</p><hr>
+                            <p>ESTIMATED TOTAL</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>AIRMAX PRO</p>
+                            <p>KSH. 2500</p>
+                            <p>KSH. 300</p>
+                            <p>KSH. 150</p><hr>
+                            <p>KSH. 2350</p>
+                        </div>
+                    </div>
+                    <div class="cart-checkout">
+                        <a href="checkout.html" class="btn btn-dark" id="checkout-btn">PROCEED TO CHECKOUT</a>
+                    </div>
+
+                </div>
+           </div>
+       </div>
+       <script src="site.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
